@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Ovning3.Ovning3
+namespace Ovning3
 {
     public class Person
     {
