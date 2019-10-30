@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ovning3
+namespace Ovning3.Encapsulation
 {
     public class Program
     {

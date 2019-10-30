@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Ovning3
+namespace Ovning3.Encapsulation
 {
     // This class is static because it only changes the state of other objects, not itself.
     public static class PersonHandler
