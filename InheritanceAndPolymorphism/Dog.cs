@@ -6,9 +6,10 @@ namespace Ovning3.InheritanceAndPolymorphism
 {
     public class Dog : Animal
     {
-        public Dog(string name, double weight, int age) : base(name, weight, age)
+        public double TailLength { get; protected set; }
+        public Dog(string name, double weight, int age, double taillength) : base(name, weight, age)
         {
-
+            TailLength = taillength;
         }
     }
 }

@@ -6,9 +6,10 @@ namespace Ovning3.InheritanceAndPolymorphism
 {
     public class Bird : Animal
     {
-        public Bird(string name, double weight, int age) : base(name, weight, age)
+        public int Feathers { get; protected set; }
+        public Bird(string name, double weight, int age, int feathers) : base(name, weight, age)
         {
-
+            Feathers = feathers;
         }
     }
 }

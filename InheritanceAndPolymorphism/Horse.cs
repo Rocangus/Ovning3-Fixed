@@ -6,9 +6,10 @@ namespace Ovning3.InheritanceAndPolymorphism
 {
     public class Horse : Animal
     {
-        public Horse(string name, double weight, int age) : base(name, weight, age)
+        public int RacesWon { get; protected set; }
+        public Horse(string name, double weight, int age, int raceswon) : base(name, weight, age)
         {
-
+            RacesWon = raceswon;
         }
     }
 }
