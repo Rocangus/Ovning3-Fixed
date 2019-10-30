@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Ovning3.InheritanceAndPolymorphism
 {
@@ -6,7 +7,7 @@ namespace Ovning3.InheritanceAndPolymorphism
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var Animals = new List<Animal>();
         }
     }
 }
