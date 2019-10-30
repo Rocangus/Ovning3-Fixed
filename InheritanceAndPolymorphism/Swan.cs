@@ -11,5 +11,11 @@ namespace Ovning3.InheritanceAndPolymorphism
         {
             IsAngry = isangry;
         }
+
+        public override string Stats()
+        {
+            string angry = IsAngry ? ", IS ANGRY!" : ", is not angry";
+            return base.Stats() + angry;
+        }
     }
 }

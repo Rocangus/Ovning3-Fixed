@@ -11,5 +11,10 @@ namespace Ovning3.InheritanceAndPolymorphism
         {
             TailLength = taillength;
         }
+
+        public override string Stats()
+        {
+            return String.Format(base.Stats() + ", tail length: {0}", TailLength);
+        }
     }
 }

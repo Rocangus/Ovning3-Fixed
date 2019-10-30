@@ -11,5 +11,10 @@ namespace Ovning3.InheritanceAndPolymorphism
         {
             LastCaughtSleeping = lastcaughtsleeping;
         }
+
+        public override string Stats()
+        {
+            return String.Format(base.Stats() + ", last caught sleeping: {0}", LastCaughtSleeping);
+        }
     }
 }

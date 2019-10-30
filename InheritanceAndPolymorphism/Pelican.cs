@@ -6,9 +6,15 @@ namespace Ovning3.InheritanceAndPolymorphism
 {
     public class Pelican : Bird
     {
-        public Pelican(string name, double weight, int age, int feathers) : base(name, weight, age, feathers)
+        public int FishInBill { get; protected set; }
+        public Pelican(string name, double weight, int age, int feathers, int fishinbill) : base(name, weight, age, feathers)
         {
+            FishInBill = fishinbill;
+        }
 
+        public override string Stats()
+        {
+            return String.Format(base.Stats() + ", fish in bill: {0}", FishInBill);
         }
     }
 }

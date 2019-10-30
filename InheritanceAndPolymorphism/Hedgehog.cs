@@ -11,5 +11,10 @@ namespace Ovning3.InheritanceAndPolymorphism
         {
             NoOfSpikes = noofspikes;
         }
+
+        public override string Stats()
+        {
+            return String.Format(base.Stats() + ", number of spikes: {0}", NoOfSpikes);
+        }
     }
 }

@@ -11,5 +11,10 @@ namespace Ovning3.InheritanceAndPolymorphism
         {
             RacesWon = raceswon;
         }
+
+        public override string Stats()
+        {
+            return String.Format(base.Stats() + ", races won: {0}", RacesWon);
+        }
     }
 }
