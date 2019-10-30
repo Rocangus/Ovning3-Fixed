@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace Ovning3.InheritanceAndPolymorphism
 {
@@ -16,6 +17,15 @@ namespace Ovning3.InheritanceAndPolymorphism
             animals.Add(new Bird("Wilhelm", 0.1, 2, 57));
             animals.Add(new Pelican("Rudolf", 5.7, 3, 643, 3));
             animals.Add(new Horse("Gustav", 175.38, 6, 4));
+
+            StringBuilder builder = new StringBuilder();
+
+            foreach (Animal animal in animals)
+            {
+                builder.AppendLine(animal.Name);
+            }
+
+            Console.WriteLine(builder.ToString());
         }
     }
 }
