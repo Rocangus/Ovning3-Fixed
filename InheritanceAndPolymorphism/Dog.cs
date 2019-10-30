@@ -16,5 +16,10 @@ namespace Ovning3.InheritanceAndPolymorphism
         {
             return String.Format(base.Stats() + ", tail length: {0}", TailLength);
         }
+
+        public string Speak()
+        {
+            return "Woff!";
+        }
     }
 }

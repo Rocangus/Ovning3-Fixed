@@ -40,7 +40,21 @@ namespace Ovning3.InheritanceAndPolymorphism
             // The compiler ensures that the latest override is executed and that is why each derived class has its' specific override of Stats() run.
 
             PrintStatsForDogOnly(animals);
+
+            // SpeakAllAnimals(animals);
+
+            SpeakDog(animals);
         }
+
+        // This call is not allowed because one can not be sure that the Animal instances happen to be instances of Dog as well. A cast is needed to call Speak 
+        // and an invalid cast (attempting to cast somethng not an instance of Dog into Dog) will throw the associated exception.
+        //private static void SpeakAllAnimals(List<Animal> animals)
+        //{
+        //    foreach (Animal animal in animals)
+        //    {
+        //        animal.Speak();
+        //    }
+        //}
 
         // Calls Stats() for the Animal instances that are an instance of the derived class Dog only.
         private static void PrintStatsForDogOnly(List<Animal> animals)
@@ -50,6 +64,18 @@ namespace Ovning3.InheritanceAndPolymorphism
                 if (animal is Dog)
                 {
                     Console.WriteLine(animal.Stats());
+                }
+            }
+        }
+
+        // Uses type patterns to cast the Animal to Dog and call Speak() if appropriate
+        private static void SpeakDog(List<Animal> animals)
+        {
+            foreach (Animal animal in animals)
+            {
+                if (animal is Dog dog)
+                {
+                    Console.WriteLine(dog.Speak());
                 }
             }
         }
