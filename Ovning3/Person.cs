@@ -17,5 +17,13 @@ namespace Ovning3
         public double Height { get; set; }
         public double Weight { get; set; }
 
+        public Person(int age, string fname, string lname, double height, double weight)
+        {
+            Age = age;
+            FName = fname;
+            LName = lname;
+            Height = height;
+            Weight = weight;
+        }
     }
 }
