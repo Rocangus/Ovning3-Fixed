@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Ovning3.InheritanceAndPolymorphism
 {
-    class Animal
+    public class Animal
     {
         public string Name { get; protected set; }
         public double Weight { get; protected set; }
