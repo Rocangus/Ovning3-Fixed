@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ovning3Tests", "Ovning3Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceAndPolymorphism", "InheritanceAndPolymorphism\InheritanceAndPolymorphism.csproj", "{3B0B896C-D960-4A9E-9F0F-1BAA216012AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphism", "Polymorphism\Polymorphism.csproj", "{A5772844-6590-48E1-BA99-C82DE7C84A8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3B0B896C-D960-4A9E-9F0F-1BAA216012AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B0B896C-D960-4A9E-9F0F-1BAA216012AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B0B896C-D960-4A9E-9F0F-1BAA216012AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5772844-6590-48E1-BA99-C82DE7C84A8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5772844-6590-48E1-BA99-C82DE7C84A8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5772844-6590-48E1-BA99-C82DE7C84A8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5772844-6590-48E1-BA99-C82DE7C84A8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
