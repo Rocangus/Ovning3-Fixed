@@ -9,5 +9,12 @@ namespace Ovning3.InheritanceAndPolymorphism
         public string Name { get; protected set; }
         public double Weight { get; protected set; }
         public int Age { get; protected set; }
+
+        public Animal(string name, double weight, int age)
+        {
+            Name = name;
+            Weight = weight;
+            Age = age;
+        }
     }
 }
