@@ -35,9 +35,23 @@ namespace Ovning3.InheritanceAndPolymorphism
 
             foreach (Animal animal in animals)
             {
-                Console.WriteLine(animal.Stats()); 
+                Console.WriteLine(animal.Stats());
             }
             // The compiler ensures that the latest override is executed and that is why each derived class has its' specific override of Stats() run.
+
+            PrintStatsForDogOnly(animals);
+        }
+
+        // Calls Stats() for the Animal instances that are an instance of the derived class Dog only.
+        private static void PrintStatsForDogOnly(List<Animal> animals)
+        {
+            foreach (Animal animal in animals)
+            {
+                if (animal is Dog)
+                {
+                    Console.WriteLine(animal.Stats());
+                }
+            }
         }
     }
 }
